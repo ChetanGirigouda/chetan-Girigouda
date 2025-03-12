@@ -30,6 +30,7 @@ Welcome to my GitHub profile! Hi, I'm Chetan Girigouda! A passionate tech enthus
 - **Description:** Built an automated fan control system that adjusts speed based on room temperature, improving energy efficiency and user comfort.
 - **Technologies Used:** Arduino Uno, LM35 Temperature sensor, I2C 16x2 LCD display, DC fan, transistor, capacitor, resistor, 1N4007 diode, connecting wires, 12V power supply.
 - **Repository:** [Link to the repository](#)
+- **video:** https://github.com/ChetanGirigouda/chetan-Girigouda/blob/00cef52cf0622a2423c5cf7792f62032f2845d89/temperature%20based%20fan%20speed%20controller.mp4
 
 ## 📬 Contact
 
