@@ -18,14 +18,14 @@ Welcome to my GitHub profile! Hi, I'm Chetan Girigouda! A passionate tech enthus
 
 ## Projects
 
-### 🚀 Coal Mine Safety Monitoring and Alerting System with Smart Helmet
+# Coal Mine Safety Monitoring and Alerting System with Smart Helmet
 
 - **Description:** Designed a smart helmet system that monitors hazardous conditions in coal mines using sensors and provides real-time alerts to ensure worker safety.
 - **Technologies Used:** Arduino Uno, MQ7 sensor, MQ2 sensor, DHT11 sensor, I2C 16x2 LCD display, TP4056 module, two 3.7V batteries, buzzer, mini breadboard, jumper wires, and Arduino IDE for coding.
 - **Repository:** https://github.com/ChetanGirigouda/coal-mine-safety-system
 - **video:** https://github.com/ChetanGirigouda/chetan-Girigouda/blob/3a76af0a95174e894af33748228acbcddea2679a/coal-mine-safety-system.mp4
 
-### 🌡️ Temperature-Based Fan Speed Control Using Arduino
+# Temperature-Based Fan Speed Control Using Arduino
 
 - **Description:** Built an automated fan control system that adjusts speed based on room temperature, improving energy efficiency and user comfort.
 - **Technologies Used:** Arduino Uno, LM35 Temperature sensor, I2C 16x2 LCD display, DC fan, transistor, capacitor, resistor, 1N4007 diode, connecting wires, 12V power supply.
