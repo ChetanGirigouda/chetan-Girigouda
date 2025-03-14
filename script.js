@@ -1,30 +1,43 @@
-// Contact Form Submission
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+// Smooth Scroll
+const links = document.querySelectorAll('nav a');
 
-    // Get form values
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Form Validation
+const form = document.getElementById('contact-form');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    // Basic Validation
-    if (!name || !email || !message) {
-        alert('Please fill out all fields.');
+    if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
         return;
     }
 
-    if (!validateEmail(email)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    // Success Message
-    alert(`Thank you, ${name}! I will get back to you soon.`);
-    document.getElementById('contact-form').reset();
+    alert('Message sent successfully!');
+    form.reset();
 });
 
-// Validate Email Function
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
+// Ensure videos don't autoplay twice
+document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll("video");
+    
+    videos.forEach(video => {
+        video.addEventListener("play", function () {
+            videos.forEach(v => {
+                if (v !== video) v.pause(); // Pause other videos if one is playing
+            });
+        });
+    });
+});
