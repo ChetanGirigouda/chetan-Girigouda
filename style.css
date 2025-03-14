@@ -1,104 +1,157 @@
-/* Global Reset */
-* {
+/* style.css */
+
+/* General Styles */
+html, body {
+    height: 100%;
+    overflow-y: auto;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #2c3e50;
+    line-height: 1.8;
+    scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background: #f9f9f9;
-    color: #333;
+h1, h2, h3 {
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 /* Header */
 header {
-    background: #4A90E2;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+header h1 {
+    font-size: 3rem;
+    color: #fff;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 2rem;
 }
 
-nav ul li a {
-    text-decoration: none;
+nav a {
     color: white;
-    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3rem;
+    transition: transform 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
-    border-bottom: 2px solid white;
+nav a:hover {
+    color: #FFD700;
+    transform: scale(1.1);
 }
 
 /* Sections */
 .section {
-    padding: 60px 20px;
-    text-align: center;
+    padding: 8rem 1rem 3rem 1rem; /* Reduced bottom padding to lessen the gap */
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Project Cards */
+/* About Me Section */
+#about p {
+    text-align: center;
+}
+
+/* Project Card */
 .project-card {
     background: white;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin: 3rem 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, box-shadow 0.4s;
+    text-align: center;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Form */
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+.project-card h3 {
+    color: #6a11cb;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #FFD700;
+}
+
+.project-card video {
+    width: 35%;
+    max-height: 180px;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+input, textarea, button {
+    padding: 1.2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
 }
 
 button {
-    padding: 12px 20px;
-    background: #4A90E2;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
-    border: none;
-    border-radius: 8px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background: #357ABD;
+    background: #4a00e0;
+    transform: scale(1.05);
+}
+
+/* Report Section */
+.report-section {
+    text-align: center;
+    padding: 2rem 0;
 }
 
 /* Footer */
 footer {
-    background: #4A90E2;
-    color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.5rem 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
 }
