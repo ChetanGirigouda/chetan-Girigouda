@@ -41,3 +41,26 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Align Social Links in a Single Line
+document.addEventListener("DOMContentLoaded", function () {
+    const socialContainer = document.querySelector(".social-links");
+    if (socialContainer) {
+        socialContainer.style.display = "flex";
+        socialContainer.style.justifyContent = "center";
+        socialContainer.style.alignItems = "center";
+        socialContainer.style.gap = "15px";
+    }
+});
+
+// Center Report Section
+document.addEventListener("DOMContentLoaded", function () {
+    const reportSection = document.querySelector(".report-section");
+    if (reportSection) {
+        reportSection.style.textAlign = "center";
+        reportSection.style.display = "flex";
+        reportSection.style.flexDirection = "column";
+        reportSection.style.alignItems = "center";
+        reportSection.style.justifyContent = "center";
+    }
+});
