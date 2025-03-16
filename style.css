@@ -71,6 +71,29 @@ nav a:hover {
     text-align: center;
 }
 
+/* CV Section */
+#cv {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 1rem;
+}
+
+.cv-button:hover {
+    background: #4a00e0;
+    transform: scale(1.05);
+}
+
 /* Skills Section */
 #skills {
     text-align: center;
